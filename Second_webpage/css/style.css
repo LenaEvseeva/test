@@ -1,70 +1,68 @@
-.page__header {
+.header {
     display: flex;
     justify-content: center;
     height: 84px;
     background: linear-gradient(to top, #000, #3e4345);
     position: relative;
 }
-.page__header__basic {
+.header-content {
     display: flex;
-    width: 920px;
+    width: 930px;
     justify-content: space-between;
     align-items: flex-end;
 }
-.page__header__titles {
+.menu {
     position: relative;
     display: flex;
-    top: 5px;
-    width: 763px;
+    top: 6px;
+    width: 762px;
     height: 35px;
     border-radius: 3px;
 }
-.titles__button {
+.menu li{
     flex-grow: 1;
-    font-family: Trebuchet MS1, Helvetica, sans-serif;
-    font-size: 0.9em;
-    color: #d4d4d4;
     background: linear-gradient(to top, #373b3d, #3f4345);
     border-left: 1px solid #4a4e50;
     border-right: 1px solid #2c3031;
     border-bottom: none;
     border-top: 1px solid #4a4e50;
-}
-.children {
-    border-top: 4px solid #f26c4f;
-    border-bottom: none;
-}
-.accessories {
-    border-bottom: 4px solid #acd373;
-    border-top: 1px solid #4a4e50;
-}
-.titles__button:focus {
     outline: none;
-    border-top: 1px solid #303133;
-    border-left: none;
-    background: #2f3233;
-    border-bottom: 3px solid #acd373;
-}
-.titles__button:hover {
-    outline: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
     border-top: 3px solid #f26c4f;
+}
+
+.menu li a{
+  font-family: Trebuchet MS1, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #d4d4d4;
+  text-decoration: none;
+  display: block;
+  margin-top: -3px;
+}
+
+.menu li:hover {
+    border-bottom: 3px solid #acd373;
     border-left: none;
     background: #2f3233;
 }
-.page__header__languages {
-    padding-bottom: 6px;
-    padding-right: 11px;
+.languages {
+    padding-bottom: 2px;
+    padding-right: 20px;
 }
-.page__header__languages .button {
+.languages .button {
     border: none;
     cursor: pointer;
-    width: 18px;
+    width: 20px;
     height: 15px;
     background-color: transparent;
+    outline: none;
 }
 .languages__usa {
     background-image: url('../img/lang.png');
     background-position: -1px -1px;
+    /*padding-left: 29px;*/
 }
 .languages__ru {
     background-image: url('../img/lang.png');
@@ -78,9 +76,7 @@
     background-image: url('../img/lang.png');
     background-position: 19px -1px;
 }
-.page__header__languages .button:focus {
-    outline: none;
-}
+
 
 
 
