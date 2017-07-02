@@ -1,0 +1,9 @@
+<ul>
+  {{#each tasks as |task|}}
+  <li>
+  <input type="checkbox" name="items">
+  <label {{action "showTask" task}}>{{task.name}}</label>
+  <button type="button">Delete</button>
+</li>
+  {{/each}}
+</ul>
