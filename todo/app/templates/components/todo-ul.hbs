@@ -1,6 +1,6 @@
 <ul>
   {{#each tasks as |task|}}
-  <li>
+  <li class="cell">
     <input type="checkbox" name="items" onChange={{action "toggle"}}>
     <label>{{task.title}}</label>
     <button type="submit" onclick={{deleteTask}}>Delete</button>
