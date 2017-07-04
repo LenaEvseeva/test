@@ -1,7 +1,9 @@
-{{todo-input}}
-{{todo-button}}
-{{todo-title title="New task"}}
-{{todo-ul tasks=model}}
-{{todo-title title="Completed task"}}
+<form onSubmit={{action "addTodo"}}>
+  {{todo-input modelHandler=(action "handleInput")}}
+  {{todo-button}}
+</form>
+{{todo-title title="New task" total=model.todoList.length class="сaption"}}
+{{todo-ul tasks=model.todoList deleteTask=(action "deleteTodo")}}
+{{todo-title title="Completed task" class="сaption"}}
 
 {{outlet}}

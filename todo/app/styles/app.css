@@ -6,3 +6,18 @@ h1 {
 .done {
   text-decoration: line-through;
 }
+
+.add-task {
+  margin-left: 10px;
+}
+
+.button-add-task {
+  margin-left: 10px;
+}
+li {
+  list-style-type: none;
+  padding: 5px;
+}
+.сaption {
+  padding-left: 10px;
+}

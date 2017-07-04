@@ -1,9 +1,9 @@
 <ul>
   {{#each tasks as |task|}}
   <li>
-  <input type="checkbox" name="items">
-  <label {{action "showTask" task}}>{{task.name}}</label>
-  <button type="button">Delete</button>
+  <input type="checkbox" name="items" onclick={{action "toggle"}}>
+  <label>{{task.title}}</label>
+  <button type="submit" onclick={{deleteTask}}>Delete</button>
 </li>
   {{/each}}
 </ul>

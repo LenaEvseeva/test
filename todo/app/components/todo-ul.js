@@ -2,8 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    showTask(task) {
-      alert(task.name);
+    toggle(e) {
+      if (e.target.checked) {
+        e.target.nextElementSibling.classList.add("done");
+      }
+      else {
+        e.target.nextElementSibling.classList.remove("done");
+      }
     }
   }
 });
