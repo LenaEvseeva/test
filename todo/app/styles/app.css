@@ -11,7 +11,7 @@
 .button-add-task {
   margin-left: 10px;
 }
-.cell {
+.todo-list__item {
   list-style-type: none;
   padding: 5px;
 }
